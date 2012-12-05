@@ -1,0 +1,45 @@
+// Place all the styles related to the locations controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+header {
+		width: 1024px;
+		margin: auto;
+		height: 100px;
+		background-color: skyblue;
+		line-height: 100px;
+		box-shadow: 2px 2px 2px black;
+}
+
+header h1{
+	margin: auto;
+}
+
+h1{
+	background-color: skyblue;
+	width: 300px;
+
+}
+
+body {
+	background-color: #576;
+	width: 1024px;
+	margin-left:250px;
+}
+
+#wrapper{
+	background-color: #def;
+	box-shadow: 2px 2px 2px black;
+	min-height:700px;
+
+}
+
+#showcontent{
+	
+	background-color: #def;
+	width: 700px;
+	min-height:400px ;
+}
+ul li {
+	
+	list-style: none;
+}

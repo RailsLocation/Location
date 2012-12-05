@@ -1,0 +1,26 @@
+<header>
+	<h1 style = "text-align:center"> TRAVEL BLOG</h1>
+</header>
+<body>
+	<div id = "wrapper">
+	<%= link_to("Add new location",new_location_path ) %>
+
+<ul>
+<% @locations.each do |l| %>
+<li>
+	<h3>
+		<%= l.name %>
+	</h3>
+	<%= l.days_since_created %>	
+	<p>
+		<%= link_to("Show", location_path(l.id))%> | <%= link_to("Edit", edit_location_path(l.id))%> | <%= link_to("Delete",location_path(l.id),:method =>:delete, :confirm => "This location will be deleted, are you really really sure?")%> 
+	</p>
+</li>	
+<% end %>
+</ul>
+</div>
+</body>
+
+
+
+

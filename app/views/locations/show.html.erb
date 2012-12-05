@@ -1,0 +1,13 @@
+
+<h1><%= @location.name %></h1>
+
+<div id="showcontent">
+	<p><%= @location.description%></p>
+</div>
+<section>
+<h4>
+  Companions on this trip    
+</h4> 
+<p><%= link_to "Add new companion", new_location_friend_path(@location.id) %></p>
+</section>
+<%= link_to "Back", :back%>

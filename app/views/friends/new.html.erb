@@ -1,0 +1,9 @@
+<%= form_for([@location,@location.friends.build]) do |f| %>
+	<%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :nickname %>
+  <%= f.text_field :nickname %>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  <%= f.submit "Done" %>
+<% end %>
